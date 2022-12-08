@@ -1,0 +1,30 @@
+@import "./../abstracts/variables.scss";
+
+@mixin button($color, $background) {
+  outline: 0;
+  font-size: 1rem;
+  background: $background;
+  color: $color;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(50, 49, 48, 0.3);
+  border-radius: 2px;
+}
+
+.primary {
+  @include button($dark, $light);
+  border: 1px solid $borderLight;
+  &:hover {
+    background: $dark;
+    color: $light;
+  }
+}
+
+.secondary {
+  @include button($light, $dark);
+  &:hover {
+    background: $light;
+    color: $dark;
+  }
+  border: 1px solid $dark;
+}

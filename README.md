@@ -11,6 +11,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 # yarn run ssr <br>
 
 runs the application on ssr mode.
+Open http://localhost:8085 to view it in the browser.
 
 # yarn run cypress <br>
 
